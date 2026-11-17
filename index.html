@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdotaPet - Animais para adoção</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>AdotaPet</h1>
+    <p>Encontre um novo amigo</p>
+  </header>
+  <main>
+    <section>
+      <h2>Cadastrar animal</h2>
+      <form id="formAnimal">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+        <label for="especie">Espécie</label>
+        <select id="especie" name="especie" required>
+          <option value="">Selecione</option>
+          <option value="Cachorro">Cachorro</option>
+          <option value="Gato">Gato</option>
+          <option value="Outro">Outro</option>
+        </select>
+        <label for="idade">Idade</label>
+        <input id="idade" name="idade" type="text" placeholder="Ex.: 2 anos" required>
+        <label for="caracteristicas">Características</label>
+        <textarea id="caracteristicas" name="caracteristicas" rows="3" required></textarea>
+        <label for="foto">Fotografia (opcional)</label>
+        <input id="foto" name="foto" type="file" accept="image/*">
+        <button type="submit">Cadastrar animal</button>
+      </form>
+    </section>
+    <section>
+      <h2>Animais disponíveis</h2>
+      <div id="listaAnimais" class="lista-animais">
+        <p class="vazio">Nenhum animal cadastrado ainda.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Sobre o projeto</h2>
+      <p>O AdotaPet é um projeto acadêmico criado para facilitar a divulgação de animais que procuram um lar.</p>
+    </section>
+  </main>
+  <footer><p>Projeto acadêmico AdotaPet</p></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
